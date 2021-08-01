@@ -5,11 +5,76 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Cover Charge Ambassador Application</title>
+    <title>Cover Charge Feedback Form</title>
+
+    <!-- CSS -->
+
 
 </head>
 
 <body>
+    <h1>Let Us Know How We're Doing!</h1>
+    <form name="Cover Charge Feedback" method="POST" action="">
+
+        <div class="feedback">
+            <label for="feedback" class="label_input_wrap">Feedback:</label>
+            <textarea name="feedback" id="feedback" cols="50" rows="15" placeholder="We value your feedback!"></textarea>
+        </div>
+
+        <div class="first-name">
+            <label for="firstname" class="label_input_wrap">First Name:</label>
+            <input type="text" name="firstname" id="firstname" placeholder="ex. Anthony">
+        </div>
+
+        <div class="last-name">
+            <label for="lastname" class="label_input_wrap">Last Name:</label>
+            <input type="text" name="lastname" id="lastname" placeholder="ex. Fauci">
+        </div>
+
+        <div class="email">
+            <label for="email" class="label_input_wrap">Email:</label>
+            <input type="email" name="email" id="email" placeholder="afauci@maskup.com">
+        </div>
+
+        <div class="checkbox">
+            <h2>Most Frequented Cover Charge Partners</h2>
+            <p>Choose all that apply.</p>
+            <input type="checkbox" name="bars" value="mothers" id="bar" /><label for="mothers"> Mother's</label>
+            <input type="checkbox" name="bars" value="balls" id="balls" /><label for="balls">Balls</label>
+            <input type="checkbox" name="bars" value="madrinas" id="madrinas" /><label for="madrinas">Madrina's</label>
+            <input type="checkbox" name="bars" value="thedime" id="thedime" /><label for="thedime">The Dime
+            </label>
+        </div>
+
+        <div class="radiobutton">
+            <h2>Are you a student?</h2>
+            <input type="radio" name="student" value="student" id="student" /><label for="mothers">Yes</label>
+            <input type="radio" name="student" value="notstudent" id="notstudent" /><label for="balls">No</label>
+
+        </div>
+
+        <div class="dropdown">
+            <label for="age" class="label_input_wrap">Age (Optional):</label>
+            <select name="age" id="age">
+                <option value="18-20">20 & under</option>
+                <option value="21-30">21-30</option>
+                <option value="31-40">31-40</option>
+                <option value="41-50">41-50</option>
+                <option value="51-60">51-60</option>
+                <option value="61+">61 & up</option>
+            </select>
+        </div>
+
+        <div class="clear">
+            <input type="reset" value="Clear">
+        </div>
+
+        <div class="submit">
+            <input type="submit" />
+        </div>
+
+
+    </form>
 
 </body>
 
