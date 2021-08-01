@@ -134,6 +134,14 @@ form {
     display: inline;
 }
 
+.clear input:hover {
+    background: gray;
+}
+
+.submit input:hover {
+    background: gray;
+}
+
 .input-section {
     margin: 10x;
 }
