@@ -29,6 +29,16 @@ h1 {
     text-transform: uppercase;
 }
 
+h1::after {
+    content: url(../images/glasses.png);
+    padding: 18px;
+}
+
+h1::before {
+    content: url(../images/maskicon.png);
+    padding: 18px;
+}
+
 
 /* ==========================================
 
@@ -210,6 +220,10 @@ footer ul li {
 
 .fab:hover {
     color: #499feb;
+}
+
+::selection {
+    color: black;
 }
 
 
