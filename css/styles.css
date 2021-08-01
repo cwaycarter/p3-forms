@@ -1,0 +1,181 @@
+* {
+    margin: 0;
+    padding: 0;
+    border: 0;
+}
+
+body {
+    font-size: 16px;
+    background-image: linear-gradient(black, black), url('../images/form.png');
+    background-position: center;
+    background-size: cover;
+    background-blend-mode: saturation;
+    font-family: 'Roboto', sans-serif;
+}
+
+h2 {
+    font-size: 16px;
+}
+
+h1 {
+    font-family: 'Archivo Black', sans-serif;
+    font-size: 40px;
+    color: #f2c063;
+    text-align: center;
+    text-shadow: 2px 2px 8px black;
+    letter-spacing: 1px;
+    margin: 80px 0;
+    padding-top: 80px;
+    text-transform: uppercase;
+}
+
+
+/* ==========================================
+
+Header
+
+
+==============================================*/
+
+header {
+    background: #f5e1a9;
+    height: 80px;
+    position: fixed;
+    width: 100%;
+    top: 0px;
+    z-index: 99;
+}
+
+header ul li {
+    display: inline-block;
+    width: 15%;
+    text-align: center;
+    background: #3b82bf;
+    padding: 11px;
+    border-radius: 10px;
+    margin: 20px 6px;
+    box-shadow: 3px 2px 3px #7d7d7d;
+    letter-spacing: 1px;
+}
+
+nav {
+    width: 900px;
+    margin: 0 auto;
+    text-align: right;
+    height: 80px;
+    position: relative;
+}
+
+nav ul {
+    list-style-type: none;
+}
+
+header ul li:hover {
+    background: #499feb;
+    transition: 0.2s;
+}
+
+nav ul li a {
+    color: #f2f2f2;
+    text-decoration: none;
+}
+
+header img {
+    float: left;
+    margin: 2px 0;
+}
+
+.covidbutton {
+    font-size: 12.5px;
+    padding: 14px 11px 12px;
+}
+
+.animate {
+    position: absolute;
+    top: 0px;
+    right: 825px;
+    animation: wink 0.9s 1s infinite;
+}
+
+
+/* =======================================
+
+
+Form Styling
+
+=======================================*/
+
+form {
+    background: #3b81bfe1;
+    opacity: 1;
+    padding: 30px;
+    max-width: 500px;
+    margin: 80px auto 100px;
+    border-radius: 10px;
+    color: white;
+    line-height: 30px;
+    letter-spacing: 1px;
+}
+
+.label_input_wrap {
+    display: block;
+}
+
+
+/* ===========================================
+
+
+Footer Styling
+
+
+=============================================*/
+
+footer {
+    background-color: #f5e1a9;
+}
+
+footer nav {
+    padding: 0 10px;
+    width: 681px;
+}
+
+footer nav ul {
+    margin-right: 50px;
+}
+
+footer ul li {
+    float: right;
+    display: inline;
+    padding: 23px;
+    margin-right: 10px;
+}
+
+.follow {
+    float: left;
+    margin: 24px 0 24px 60px;
+}
+
+.fab {
+    color: #3b82bf;
+    font-size: 35px;
+}
+
+.fab:hover {
+    color: #499feb;
+}
+
+
+/* ===========================================
+
+Animation Styling
+
+=============================================*/
+
+@keyframes wink {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}

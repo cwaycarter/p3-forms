@@ -2,79 +2,125 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta charset="utf-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Cover Charge Feedback Form</title>
 
     <!-- CSS -->
+    <link rel="stylesheet" href="css/styles.css">
 
+    <!-- favicon -->
+    <link rel="icon" type="image/ico" href="images/favicon.ico.png" />
 
+    <!-- google fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Archivo+Black&family=Roboto&display=swap" rel="stylesheet">
+
+    <!-- font awesome -->
+    <script src="https://kit.fontawesome.com/63623a02ad.js" crossorigin="anonymous"></script>
 </head>
 
 <body>
-    <h1>Let Us Know How We're Doing!</h1>
-    <form name="Cover Charge Feedback" method="POST" action="">
 
-        <div class="feedback">
-            <label for="feedback" class="label_input_wrap">Feedback:</label>
-            <textarea name="feedback" id="feedback" cols="50" rows="15" placeholder="We value your feedback!"></textarea>
-        </div>
+    <header>
+        <nav>
+            <a href="index.html"><img src="images/nav-logo.svg" alt="Logo" title="Logo" width="75"></a>
 
-        <div class="first-name">
-            <label for="firstname" class="label_input_wrap">First Name:</label>
-            <input type="text" name="firstname" id="firstname" placeholder="ex. Anthony">
-        </div>
+            <a href="index.html"><img class="animate" src="images/nav-logo-open.svg" alt="Logo" title="Logo" width="75"></a>
 
-        <div class="last-name">
-            <label for="lastname" class="label_input_wrap">Last Name:</label>
-            <input type="text" name="lastname" id="lastname" placeholder="ex. Fauci">
-        </div>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="faq.html">FAQ</a></li>
+                <li class="covidbutton"><a href="covid.html">COVID-19 Resources</a></li>
+            </ul>
+        </nav>
+    </header>
 
-        <div class="email">
-            <label for="email" class="label_input_wrap">Email:</label>
-            <input type="email" name="email" id="email" placeholder="afauci@maskup.com">
-        </div>
+    <main>
+        <h1>Let Us Know How We're Doing!</h1>
 
-        <div class="checkbox">
-            <h2>Most Frequented Cover Charge Partners</h2>
-            <p>Choose all that apply.</p>
-            <input type="checkbox" name="bars" value="mothers" id="bar" /><label for="mothers"> Mother's</label>
-            <input type="checkbox" name="bars" value="balls" id="balls" /><label for="balls">Balls</label>
-            <input type="checkbox" name="bars" value="madrinas" id="madrinas" /><label for="madrinas">Madrina's</label>
-            <input type="checkbox" name="bars" value="thedime" id="thedime" /><label for="thedime">The Dime
-            </label>
-        </div>
+        <form name="Cover Charge Feedback" method="POST" action="">
 
-        <div class="radiobutton">
-            <h2>Are you a student?</h2>
-            <input type="radio" name="student" value="student" id="student" /><label for="mothers">Yes</label>
-            <input type="radio" name="student" value="notstudent" id="notstudent" /><label for="balls">No</label>
+            <div class="feedback">
+                <label for="feedback" class="label_input_wrap">Feedback:</label>
+                <textarea name="feedback" id="feedback" cols="50" rows="15" placeholder="We value your feedback!"></textarea>
+            </div>
 
-        </div>
+            <div class="first-name">
+                <label for="firstname" class="label_input_wrap">First Name:</label>
+                <input type="text" name="firstname" id="firstname" placeholder="ex. Anthony">
+            </div>ks
 
-        <div class="dropdown">
-            <label for="age" class="label_input_wrap">Age (Optional):</label>
-            <select name="age" id="age">
-                <option value="18-20">20 & under</option>
-                <option value="21-30">21-30</option>
-                <option value="31-40">31-40</option>
-                <option value="41-50">41-50</option>
-                <option value="51-60">51-60</option>
-                <option value="61+">61 & up</option>
-            </select>
-        </div>
+            <div class="last-name">
+                <label for="lastname" class="label_input_wrap">Last Name:</label>
+                <input type="text" name="lastname" id="lastname" placeholder="ex. Fauci">
+            </div>
 
-        <div class="clear">
-            <input type="reset" value="Clear">
-        </div>
+            <div class="email">
+                <label for="email" class="label_input_wrap">Email:</label>
+                <input type="email" name="email" id="email" placeholder="afauci@maskup.com">
+            </div>
 
-        <div class="submit">
-            <input type="submit" />
-        </div>
+            <div class="checkbox">
+                <h2>Most Frequented Cover Charge Partners</h2>
+                <p>Choose all that apply.</p>
+                <input type="checkbox" name="bars" value="mothers" id="bar" /><label for="mothers"> Mother's</label>
+                <input type="checkbox" name="bars" value="balls" id="balls" /><label for="balls">Balls</label>
+                <input type="checkbox" name="bars" value="madrinas" id="madrinas" /><label for="madrinas">Madrina's</label>
+                <input type="checkbox" name="bars" value="thedime" id="thedime" /><label for="thedime">The Dime
+                </label>
+            </div>
 
+            <div class="radiobutton">
+                <h2>Are you a student?</h2>
+                <input type="radio" name="student" value="student" id="student" /><label for="mothers">Yes</label>
+                <input type="radio" name="student" value="notstudent" id="notstudent" /><label for="balls">No</label>
 
-    </form>
+            </div>
+
+            <div class="dropdown">
+                <label for="age" class="label_input_wrap">Age (Optional):</label>
+                <select name="age" id="age">
+                    <option value="18-20">20 & under</option>
+                    <option value="21-30">21-30</option>
+                    <option value="31-40">31-40</option>
+                    <option value="41-50">41-50</option>
+                    <option value="51-60">51-60</option>
+                    <option value="61+">61 & up</option>
+                </select>
+            </div>
+
+            <div class="clear">
+                <input type="reset" value="Clear">
+            </div>
+
+            <div class="submit">
+                <input type="submit" />
+            </div>
+        </form>
+
+    </main>
+
+    <footer>
+        <nav>
+            <img class="follow" src="images/follow.svg" alt="follow us logo" title="follow the campaign" width="260">
+
+            <ul>
+                <li>
+                    <a href="https://twitter.com" target="_blank"><i class="fab fa-twitter"></i></a>
+                </li>
+                <li>
+                    <a href="https://instagram.com" target="_blank"><i class="fab fa-instagram"></i></a>
+                </li>
+                <li>
+                    <a href="https://facebook.com" target="_blank"><i class="fab fa-facebook-f"></i></a>
+                </li>
+            </ul>
+        </nav>
+    </footer>
 
 </body>
 
