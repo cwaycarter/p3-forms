@@ -5,7 +5,7 @@
 }
 
 body {
-    font-size: 16px;
+    /* font-size: 16px; */
     background-image: linear-gradient(black, black), url('../images/form.png');
     background-position: center;
     background-size: cover;
@@ -131,10 +131,14 @@ form {
     display: block;
 }
 
+input {
+    padding: 5px 10px;
+    border-radius: 3px;
+}
+
 .clear input,
 .submit input {
     background: #e2e0dc;
-    padding: 5px 10px;
     border-radius: 5px;
     font-size: 16px;
 }
@@ -153,12 +157,7 @@ form {
 }
 
 .input-section {
-    margin: 10x;
-}
-
-input {
-    padding: 5px 10px;
-    border-radius: 3px;
+    margin: 2px;
 }
 
 textarea {
