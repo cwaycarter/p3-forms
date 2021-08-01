@@ -19,6 +19,7 @@ body {
     background-size: cover;
     background-blend-mode: saturation;
     font-family: 'Roboto', sans-serif;
+    color: white;
 }
 
 h2 {
@@ -186,6 +187,10 @@ select {
     margin-bottom: 10px;
 }
 
+form::selection {
+    color: black;
+}
+
 
 /* ===========================================
 
@@ -227,10 +232,6 @@ footer ul li {
 
 .fab:hover {
     color: #499feb;
-}
-
-::selection {
-    color: black;
 }
 
 

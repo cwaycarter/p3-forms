@@ -14,12 +14,12 @@ univeral styling
 }
 
 body {
-    /* font-size: 16px; */
     background-image: linear-gradient(black, black), url('../images/form.png');
     background-position: center;
     background-size: cover;
     background-blend-mode: saturation;
     font-family: 'Roboto', sans-serif;
+    color: white;
 }
 
 h2 {
