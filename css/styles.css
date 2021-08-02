@@ -188,7 +188,7 @@ select {
 }
 
 form::selection {
-    color: black;
+    background: #499feb;
 }
 
 

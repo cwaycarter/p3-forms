@@ -20,6 +20,7 @@ body {
     background-size: cover;
     background-blend-mode: saturation;
     font-family: 'Roboto', sans-serif;
+    color: white;
 }
 
 h2 {

@@ -42,25 +42,26 @@
     <main>
 
         <h1>Let Us Know How We're Doing!</h1>
-        <form class="contact-form" id="test_form" name="test_form" method="" action="form.php" onsubmit="return validateForm(this)">
+
+        <form class="contact-form" id="test_form" name="test_form" method="POST" action="form.php" onsubmit="return validateForm(this)">
             <div class="feedback input-section">
                 <label for="feedback" class="label_input_wrap">Feedback:</label>
-                <textarea name="feedback" id="feedback" cols="50" rows="15" placeholder="We value your feedback!"></textarea>
+                <textarea name="req_feedback" id="feedback" cols="50" rows="15" placeholder="We value your feedback!"></textarea>
             </div>
 
             <div class="first-name input-section">
                 <label for="firstname" class="label_input_wrap">First Name:</label>
-                <input type="text" name="firstname" id="firstname" placeholder="ex. Anthony">
+                <input type="text" name="req_firstname" id="firstname" placeholder="ex. Anthony">
             </div>
 
             <div class="last-name input-section">
                 <label for="lastname" class="label_input_wrap">Last Name:</label>
-                <input type="text" name="lastname" id="lastname" placeholder="ex. Fauci">
+                <input type="text" name="req_lastname" id="lastname" placeholder="ex. Fauci">
             </div>
 
             <div class="email input-section">
                 <label for="email" class="label_input_wrap">Email:</label>
-                <input type="email" name="email" id="email" placeholder="afauci@maskup.com">
+                <input type="email" name="req_email" id="email" placeholder="afauci@maskup.com">
             </div>
 
             <div class="checkbox input-section">
