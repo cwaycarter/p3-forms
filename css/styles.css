@@ -13,13 +13,18 @@ univeral styling
 }
 
 body {
-    /* font-size: 16px; */
     background-image: linear-gradient(black, black), url('../images/form.png');
     background-position: center;
     background-size: cover;
     background-blend-mode: saturation;
     font-family: 'Roboto', sans-serif;
     color: white;
+    background-repeat: no-repeat;
+}
+
+.bodycontainer {
+    position: relative;
+    min-height: 100%;
 }
 
 h2 {
@@ -36,16 +41,6 @@ h1 {
     margin: 80px 0;
     padding-top: 80px;
     text-transform: uppercase;
-}
-
-h1::after {
-    content: url(../images/glasses.png);
-    padding: 18px;
-}
-
-h1::before {
-    content: url(../images/maskicon.png);
-    padding: 18px;
 }
 
 
@@ -72,26 +67,27 @@ header ul li {
     background: #3b82bf;
     padding: 11px;
     border-radius: 10px;
-    margin: 20px 6px;
+    margin: 19px 6px;
     box-shadow: 3px 2px 3px #7d7d7d;
     letter-spacing: 1px;
+    transition: .2s;
+}
+
+header ul li:hover {
+    background: #499feb;
+    transition: 0.2s;
 }
 
 nav {
     width: 900px;
     margin: 0 auto;
-    text-align: right;
+    text-align: center;
     height: 80px;
     position: relative;
 }
 
 nav ul {
     list-style-type: none;
-}
-
-header ul li:hover {
-    background: #499feb;
-    transition: 0.2s;
 }
 
 nav ul li a {
@@ -101,7 +97,8 @@ nav ul li a {
 
 header img {
     float: left;
-    margin: 2px 0;
+    margin: 7px 0;
+    padding-left: 45px;
 }
 
 .covidbutton {
@@ -112,8 +109,12 @@ header img {
 .animate {
     position: absolute;
     top: 0px;
-    right: 825px;
+    right: 790px;
     animation: wink 0.9s 1s infinite;
+}
+
+::selection {
+    background: #f2c06396;
 }
 
 
@@ -205,33 +206,56 @@ footer {
 }
 
 footer nav {
-    padding: 0 10px;
-    width: 681px;
+    height: 80px;
+}
+
+footer div {
+    display: inline-block;
+}
+
+footer img {
+    float: left;
 }
 
 footer nav ul {
-    margin-right: 50px;
-}
-
-footer ul li {
     float: right;
-    display: inline;
-    padding: 23px;
-    margin-right: 10px;
 }
 
-.follow {
-    float: left;
-    margin: 24px 0 24px 60px;
+footer nav ul li {
+    display: inline;
+    padding: 0 35px;
+}
+
+.myname {
+    width: 600px;
+    font-size: 11px;
+}
+
+.myname a {
+    text-decoration: none;
+    color: #3b82bf;
+    transition: .3s;
+}
+
+.myname a:hover {
+    color: #499feb;
+    transition: .3s;
+}
+
+.footertop {
+    width: 600px;
+    padding: 13px 0 3px 0;
 }
 
 .fab {
     color: #3b82bf;
     font-size: 35px;
+    transition: .3s;
 }
 
 .fab:hover {
     color: #499feb;
+    transition: .3s;
 }
 
 

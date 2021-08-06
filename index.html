@@ -2,8 +2,8 @@
 <html lang="en">
 
 <head>
-    <meta charset="utf-8">
-    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Cover Charge Feedback Form</title>
 
@@ -23,18 +23,17 @@
 </head>
 
 <body>
-
     <header>
         <nav>
-            <a href="index.html"><img src="images/nav-logo.svg" alt="Logo" title="Logo" width="75"></a>
+            <a href="index.html"><img src="images/nav-logo.svg" alt="Logo" title="Logo" width="65"></a>
 
-            <a href="index.html"><img class="animate" src="images/nav-logo-open.svg" alt="Logo" title="Logo" width="75"></a>
+            <a href="index.html"><img class="animate" src="images/nav-logo-open.svg" alt="Logo" title="Logo" width="65"></a>
 
             <ul>
-                <li><a href="index.html">Home</a></li>
-                <li><a href="about.html">About</a></li>
-                <li><a href="faq.html">FAQ</a></li>
-                <li class="covidbutton"><a href="covid.html">COVID-19 Resources</a></li>
+                <li><a href="https://www.cwaycarter.com/campaigncovercharge/index.html" target="_blank">Home</a></li>
+                <li><a href="https://www.cwaycarter.com/campaigncovercharge/about.html" target="_blank">About</a></li>
+                <li><a href="https://www.cwaycarter.com/campaigncovercharge/faq.html" target="_blank">FAQ</a></li>
+                <li class="covidbutton"><a href="https://www.cwaycarter.com/campaigncovercharge/covid.html" target="_blank">COVID-19 Resources</a></li>
             </ul>
         </nav>
     </header>
@@ -42,83 +41,95 @@
     <main>
 
         <h1>Let Us Know How We're Doing!</h1>
+        <div class="formcontain">
+            <form class="contact-form" id="test_form" name="test_form" method="POST" action="form.php" onsubmit="return validateForm(this)">
+                <div class="feedback input-section">
+                    <label for="feedback" class="label_input_wrap">Feedback:</label>
+                    <textarea name="req_feedback" id="feedback" cols="50" rows="15" placeholder="We value your feedback!"></textarea>
+                </div>
 
-        <form class="contact-form" id="test_form" name="test_form" method="POST" action="form.php" onsubmit="return validateForm(this)">
-            <div class="feedback input-section">
-                <label for="feedback" class="label_input_wrap">Feedback:</label>
-                <textarea name="req_feedback" id="feedback" cols="50" rows="15" placeholder="We value your feedback!"></textarea>
-            </div>
+                <div class="first-name input-section">
+                    <label for="firstname" class="label_input_wrap">First Name:</label>
+                    <input type="text" name="req_firstname" id="firstname" placeholder="ex. Anthony">
+                </div>
 
-            <div class="first-name input-section">
-                <label for="firstname" class="label_input_wrap">First Name:</label>
-                <input type="text" name="req_firstname" id="firstname" placeholder="ex. Anthony">
-            </div>
+                <div class="last-name input-section">
+                    <label for="lastname" class="label_input_wrap">Last Name:</label>
+                    <input type="text" name="req_lastname" id="lastname" placeholder="ex. Fauci">
+                </div>
 
-            <div class="last-name input-section">
-                <label for="lastname" class="label_input_wrap">Last Name:</label>
-                <input type="text" name="req_lastname" id="lastname" placeholder="ex. Fauci">
-            </div>
+                <div class="email input-section">
+                    <label for="email" class="label_input_wrap">Email:</label>
+                    <input type="email" name="req_email" id="email" placeholder="afauci@maskup.com">
+                </div>
 
-            <div class="email input-section">
-                <label for="email" class="label_input_wrap">Email:</label>
-                <input type="email" name="req_email" id="email" placeholder="afauci@maskup.com">
-            </div>
+                <div class="checkbox input-section">
+                    <h2>Most Frequented Cover Charge Partners</h2>
+                    <p>Choose all that apply.</p>
+                    <input type="checkbox" name="bars" value="mothers" id="mothers" /><label for="mothers"> Mother's</label>
+                    <input type="checkbox" name="bars" value="balls" id="balls" /><label for="balls"> Balls</label>
+                    <input type="checkbox" name="bars" value="madrinas" id="madrinas" /><label for="madrinas"> Madrina's</label>
+                    <input type="checkbox" name="bars" value="thedime" id="thedime" /><label for="thedime"> The Dime
+                            </label>
+                </div>
 
-            <div class="checkbox input-section">
-                <h2>Most Frequented Cover Charge Partners</h2>
-                <p>Choose all that apply.</p>
-                <input type="checkbox" name="bars" value="mothers" id="mothers" /><label for="mothers"> Mother's</label>
-                <input type="checkbox" name="bars" value="balls" id="balls" /><label for="balls"> Balls</label>
-                <input type="checkbox" name="bars" value="madrinas" id="madrinas" /><label for="madrinas"> Madrina's</label>
-                <input type="checkbox" name="bars" value="thedime" id="thedime" /><label for="thedime"> The Dime
-                </label>
-            </div>
+                <div class="radiobutton input-section">
+                    <h2>Are you a student?</h2>
+                    <input type="radio" name="student" value="student" id="student" /><label for="student">Yes</label>
+                    <input type="radio" name="student" value="nonstudent" id="nonstudent" /><label for="nonstudent">No</label>
 
-            <div class="radiobutton input-section">
-                <h2>Are you a student?</h2>
-                <input type="radio" name="student" value="student" id="student" /><label for="student">Yes</label>
-                <input type="radio" name="student" value="nonstudent" id="nonstudent" /><label for="nonstudent">No</label>
+                </div>
 
-            </div>
+                <div class="dropdown input-section">
+                    <label for="age" class="label_input_wrap">Age Range:</label>
+                    <select name="age" id="age">
+                                <option value="18-20">20 & under</option>
+                                <option value="21-30">21-30</option>
+                                <option value="31-40">31-40</option>
+                                <option value="41-50">41-50</option>
+                                <option value="51-60">51-60</option>
+                                <option value="61+">61 & up</option>
+                            </select>
+                </div>
 
-            <div class="dropdown input-section">
-                <label for="age" class="label_input_wrap">Age Range:</label>
-                <select name="age" id="age">
-                    <option value="18-20">20 & under</option>
-                    <option value="21-30">21-30</option>
-                    <option value="31-40">31-40</option>
-                    <option value="41-50">41-50</option>
-                    <option value="51-60">51-60</option>
-                    <option value="61+">61 & up</option>
-                </select>
-            </div>
+                <div class="clear">
+                    <input type="reset" value="Clear">
+                </div>
 
-            <div class="clear">
-                <input type="reset" value="Clear">
-            </div>
-
-            <div class="submit">
-                <input type="submit" value="Submit">
-            </div>
-        </form>
-
+                <div class="submit">
+                    <input type="submit" value="Submit">
+                </div>
+            </form>
+        </div>
     </main>
+
 
     <footer>
         <nav>
-            <img class="follow" src="images/follow.svg" alt="follow us logo" title="follow the campaign" width="260">
 
-            <ul>
-                <li>
-                    <a href="https://twitter.com" target="_blank"><i class="fab fa-twitter"></i></a>
-                </li>
-                <li>
-                    <a href="https://instagram.com" target="_blank"><i class="fab fa-instagram"></i></a>
-                </li>
-                <li>
-                    <a href="https://facebook.com" target="_blank"><i class="fab fa-facebook-f"></i></a>
-                </li>
-            </ul>
+            <div class="footertop">
+
+                <img src="images/follow.svg" alt="follow us logo" title="follow the campaign" width="260">
+
+                <ul>
+                    <li>
+                        <a href="https://twitter.com" target="_blank"><i class="fab fa-twitter"></i></a>
+                    </li>
+                    <li>
+                        <a href="https://instagram.com" target="_blank"><i class="fab fa-instagram"></i></a>
+                    </li>
+                    <li>
+                        <a href="https://facebook.com" target="_blank"><i class="fab fa-facebook-f"></i></a>
+                    </li>
+                </ul>
+
+            </div>
+
+
+            <div class="myname">
+                <p>Website by <a href="mailto: remostar@ufl.edu">Christina Carter</a></p>
+            </div>
+
         </nav>
     </footer>
 
